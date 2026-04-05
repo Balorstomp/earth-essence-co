@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background-color: #EFE5D5;
+  color: #1E1510;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Paper / linen texture overlay ─────────────────────────────────────────── */
+/* Adds a subtle grain to any element that carries .texture class */
+.texture::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  mix-blend-mode: multiply;
+  z-index: 0;
+}
+
+/* ── Typography ────────────────────────────────────────────────────────────── */
+.font-display { font-family: 'Playfair Display', Georgia, serif; }
+
+/* ── Category accent colours (updated to warm earthy) ───────────────────────── */
+.accent-hair       { color: #9E4A28; }   /* terracotta */
+.accent-skin       { color: #8C6239; }   /* warm ochre */
+.accent-face-cream { color: #7A4030; }   /* warm rust */
+.border-hair       { border-color: #9E4A28; }
+.border-skin       { border-color: #8C6239; }
+.border-face-cream { border-color: #7A4030; }
+
+/* ── Buttons ───────────────────────────────────────────────────────────────── */
+.btn-primary {
+  @apply inline-flex items-center justify-center px-8 py-3.5 bg-forest text-cream-light text-xs font-semibold tracking-widest uppercase transition-all duration-200 hover:bg-olive active:scale-95;
+}
+.btn-outline {
+  @apply inline-flex items-center justify-center px-8 py-3.5 border border-forest text-forest text-xs font-semibold tracking-widest uppercase transition-all duration-200 hover:bg-forest hover:text-cream-light active:scale-95;
+}
+.btn-sage {
+  @apply inline-flex items-center justify-center px-8 py-3.5 bg-sage-light text-forest text-xs font-semibold tracking-widest uppercase transition-all duration-200 hover:bg-sage hover:text-cream-light active:scale-95;
+}
+.btn-terra {
+  @apply inline-flex items-center justify-center px-8 py-3.5 bg-terra text-cream-light text-xs font-semibold tracking-widest uppercase transition-all duration-200 hover:bg-ember active:scale-95;
+}
+
+/* ── Product card ──────────────────────────────────────────────────────────── */
+.product-card {
+  @apply bg-cream-light transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+/* ── Organic shape helpers ─────────────────────────────────────────────────── */
+.blob-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+.blob-2 {
+  border-radius: 30% 70% 70% 30% / 30% 52% 48% 70%;
+}
+.blob-3 {
+  border-radius: 50% 50% 35% 65% / 45% 55% 45% 55%;
+}
+
+/* ── Wavy divider ──────────────────────────────────────────────────────────── */
+.wave-divider {
+  overflow: hidden;
+  line-height: 0;
+}
+
+/* ── Section spacing ───────────────────────────────────────────────────────── */
+.section { @apply px-6 md:px-12 lg:px-20 py-16 md:py-24; }
+
+/* ── Floating card ─────────────────────────────────────────────────────────── */
+.floating-card {
+  @apply bg-cream-light/95 backdrop-blur-sm shadow-lg px-4 py-3 flex items-center gap-3;
+  border-radius: 12px;
+}
+
+/* ── Review stars ──────────────────────────────────────────────────────────── */
+.stars { color: #C8A84B; letter-spacing: 1px; }
+
+/* ── Input ─────────────────────────────────────────────────────────────────── */
+input:focus, select:focus, textarea:focus { border-color: #9E4A28 !important; }
+
+/* ── Scrollbar ─────────────────────────────────────────────────────────────── */
+::-webkit-scrollbar        { width: 6px; }
+::-webkit-scrollbar-track  { background: #EFE5D5; }
+::-webkit-scrollbar-thumb  { background: #D4B896; border-radius: 3px; }
+
+/* ── Organic leaf / botanical SVG decorations ──────────────────────────────── */
+.leaf-deco {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.08;
+}
+
+/* ── Badge pill ────────────────────────────────────────────────────────────── */
+.badge {
+  @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium;
+}
+.badge-green { @apply bg-sage-light text-forest; }
+.badge-sand  { @apply bg-sand/50 text-ink-light; }
+.badge-terra { background-color: #F0DDD0; color: #9E4A28; }
+
+/* ── Razorpay / payment badge strip ────────────────────────────────────────── */
+.payment-badge {
+  @apply inline-flex items-center gap-1 px-2 py-1 text-[9px] font-semibold tracking-wider uppercase rounded-sm;
+  background: rgba(239,229,213,0.8);
+  color: #9E8070;
+  border: 1px solid #D4B896;
+}
+.payment-badge.active {
+  background: #3B1F0F;
+  color: #F9F2E7;
+  border-color: #3B1F0F;
+}
+
+/* ── Page fade in ──────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.5s ease both; }
+
+/* ── Gentle sway for botanical decorations ─────────────────────────────────── */
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg); }
+  50%       { transform: rotate(2deg); }
+}
+.sway { animation: sway 6s ease-in-out infinite; transform-origin: bottom center; }
