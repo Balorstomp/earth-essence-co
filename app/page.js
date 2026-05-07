@@ -149,14 +149,6 @@ export default function HomePage() {
                 className="object-cover"
                 priority
               />
-              {/* Fallback placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #D4B896 0%, #EFE5D5 60%, #C08B68 100%)' }}>
-                <div className="text-center">
-                  <FlowerDeco className="w-24 h-24 mx-auto text-forest opacity-20" />
-                  <p className="font-display font-bold text-4xl text-forest/20 mt-2">E&amp;E</p>
-                  <p className="text-[9px] tracking-widest uppercase text-forest/20 mt-1">Add /public/images/hero.jpg</p>
-                </div>
-              </div>
               {/* Accent bar */}
               <div className="absolute top-0 left-0 right-0 h-1.5 bg-terra" />
 
@@ -346,14 +338,6 @@ export default function HomePage() {
           </div>
           <div className="relative aspect-square rounded-sm overflow-hidden" style={{ backgroundColor: 'rgba(255,255,255,0.06)' }}>
             <Image src="/images/founder.jpg" alt="Earth & Essence Co. founder" fill className="object-cover" />
-            {/* Fallback placeholder */}
-            <div className="absolute inset-0 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, rgba(160,82,45,0.2) 0%, rgba(59,31,15,0.4) 100%)' }}>
-              <div className="text-center">
-                <FlowerDeco className="w-20 h-20 mx-auto text-cream-light opacity-10" />
-                <p className="font-display font-bold text-6xl text-cream-light/10 mt-2">E&amp;E</p>
-                <p className="text-[9px] tracking-widest uppercase text-cream-light/20 mt-2">Add /public/images/founder.jpg</p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
