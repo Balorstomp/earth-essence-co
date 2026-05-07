@@ -62,7 +62,7 @@ function FlowerDeco({ className = '', style = {} }) {
 function HerbSprig({ className = '', style = {} }) {
   return (
     <svg className={className} style={style} viewBox="0 0 80 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M40 190 C40 190 40 20 40 20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path d="M40 190 C40 190 40 20 40 20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
       {[30,55,80,105,130,155].map((y, i) => (
         <g key={i}>
           <path d={`M40 ${y} C${i%2===0 ? 15 : 65} ${y-10} ${i%2===0 ? 10 : 70} ${y-5} ${i%2===0 ? 8 : 72} ${y}`}
@@ -111,29 +111,205 @@ export default function HomePage() {
               <span className="w-1.5 h-1.5 rounded-full bg-terra" />
               <span className="text-[10px] tracking-widest uppercase font-semibold text-forest">Organic Â· Handcrafted Â· Pure</span>
             </div>
-            <h1 className="font-display font-bold text-forest leading-none mb-6" style={{ fontSize: 'clamp(3rem, 7vw , 5.5rem)' }}>
+            <h1 className="font-display font-bold text-forest leading-none mb-6" style={{ fontSize: 'clamp(3rem, 7vw, 5.5rem)' }}>
               Skincare<br />
-              <span className="italic font-normal text-terra">rooted in</span><br /Ï‚ˆ˜]\™K‚ˆÚO‚ˆÛ\ÜÓ˜[YOH^Z[šË[YÚ^X˜\ÙHY^[ÈXY[™Ë\™[^YX^]Ë[YX‹LL‚ˆ]™\žH˜\ˆ[™˜\ˆ[™XYH[ˆÛX[˜]Ú\È8 %›ÈÝ[]\Ë›È\˜X™[œË›ÈÛÛ\›ÛZ\Ù\Ëˆ\Ý[È]ÛÜšË‚ˆÜ‚ˆ]ˆÛ\ÜÓ˜[YOH™›^›^]Ü˜\Ø\M‚ˆ[šÈ™YH‹ÜÚÜˆÛ\ÜÓ˜[YOH˜‹\š[X\žH”ÚÜ›ÝÏÓ[šÏ‚ˆ[šÈ™YH‹ØX›Ý]ˆÛ\ÜÓ˜[YOH˜‹[Ý][™H“Ý\ˆÝÜžOÓ[šÏ‚ˆÙ]‚‚ˆËÊˆ™]šY]ÜÈÛØÚX[›ÛÙˆ
-‹ßBˆ]ˆÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\LÈ]LLN›Ü™\‹]›Ü™\‹\Ø[™‚ˆ]ˆÛ\ÜÓ˜[YOH™›^\ÜXÙK^Lˆ‚ˆÖÉÈÑŒ	Ë	ÈÑŽM‰Ë	ÈÐÌŽ	Ë	ÈÎQMLŽ	×K›X\
+              <span className="italic font-normal text-terra">rooted in</span><br />
+              nature.
+            </h1>
+            <p className="text-ink-light text-base md:text-lg leading-relaxed max-w-md mb-10">
+              Every bar and jar handmade in small batches â€” no sulphates, no parabens, no compromises. Just plants that work.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link href="/shop" className="btn-primary">Shop Now</Link>
+              <Link href="/about" className="btn-outline">Our Story</Link>
+            </div>
 
-™ËJHOˆ
-ˆ]ˆÙ^O^Ú_HÛ\ÜÓ˜[YOHËNN›Ý[™YY[›Ü™\‹Lˆ›Ü™\‹XÜ™X[K[YÚˆÝ[O^ÞÈ˜XÚÙÜ›Ý[™ÛÛÜŽˆ™È_HÏ‚ˆ
-J_BˆÙ]‚ˆ]‚ˆ]ˆÛ\ÜÓ˜[YOHœÝ\œÈ^^È¸¦!x¦!x¦!x¦!x¦!OÙ]‚ˆÛ\ÜÓ˜[YOH^^È^\Û]H]LHŽH0­ÈŒ
-È\HÝ\ÝÛY\œÏÜ‚ˆÙ]‚ˆÙ]‚ˆÙ]‚‚ˆËÊˆ\›È[XYÙH
-È›Ø][™ÈØ\™È
-‹ßBˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™H˜YK]\ˆÝ[O^ÞÈ[š[X][Û‘[^Nˆ	ÌŒM\ÉÈ_O‚ˆËÊˆXZ[ˆ[XYÙH
-‹ßBˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™H\ÜXÝVÍÍWHÝ™\™›ÝËZY[ˆ›Ý[™Y\ÛHˆÝ[O^ÞÈ˜XÚÙÜ›Ý[™ÛÛÜŽˆ	ÈÑŽM‰È_O‚ˆ[XYÙBˆÜ˜ÏH‹Ú[XYÙ\ËÚ\›ËšœÈ‚ˆ[H‘X\	ˆ\ÜÙ[˜ÙHÛËˆ˜]\˜[ÚÚ[˜Ø\™H‚ˆš[ˆÛ\ÜÓ˜[YOH›Øš™XÝXÛÝ™\ˆ‚ˆš[Üš]BˆÏ‚ˆËÊˆ˜[˜XÚÈXÙZÛ\ˆ
-‹ßBˆ]ˆÛ\ÜÓ˜[YOH˜XœÛÛ]H[œÙ]L›^][\ËXÙ[\ˆ\ÝYžKXÙ[\ˆˆÝ[O^ÞÈ˜XÚÙÜ›Ý[™ˆ	Û[™X\‹YÜ˜YY[
-LÍYYËÑŽMˆ	KÑQ‘MQHŒ	KÐÌŽL	JIÈ_O‚ˆ]ˆÛ\ÜÓ˜[YOH^XÙ[\ˆ‚ˆ›ÝÙ\‘XÛÈÛ\ÜÓ˜[YOHËLL^X]]È^Y›Ü™\ÝÜXÚ]KLŒˆÏ‚ˆÛ\ÜÓ˜[YOH™›ÛY\Ü^H›ÛX›Û^M^Y›Ü™\ÝÌŒ]Lˆ‘I˜[\ÑOÜ‚ˆÛ\ÜÓ˜[YOH^VÎ\H˜XÚÚ[™Ë]ÚY\Ý\\˜Ø\ÙH^Y›Ü™\ÝÌŒ]LHYÜX›XËÚ[XYÙ\ËÚ\›ËšœÏÜ‚ˆÙ]‚ˆÙ]‚ˆËÊˆXØÙ[˜\ˆ
-‹ßBˆ]ˆÛ\ÜÓ˜[YOH˜XœÛÛ]HÜLYLšYÚLLKH™Ë]\œ˜HˆÏ‚‚ˆËÊˆ›Ý™[ˆY™™XÝ]™[™\ÜÈØ\™
-‹ßBˆ]ˆÛ\ÜÓ˜[YOH™›Ø][™ËXØ\™XœÛÛ]H›ÝÛKMˆYM‚ˆ]ˆÛ\ÜÓ˜[YOHËNN›Ý[™YY[›^][\ËXÙ[\ˆ\ÝYžKXÙ[\ˆ›^\Úš[šËLˆÝ[O^ÞÈ˜XÚÙÜ›Ý[™ˆ	ÈÑŒ	È_O‚ˆÝ™ÈÚYHŒMˆZYÚHŒMˆšY]Ð›ÞHŒˆš[H››Û™HˆÝ›ÚÙOHˆÎQMLŽˆÝ›ÚÙUÚYHŒˆ‚ˆÛ[[™HÚ[ÏHŒŒˆHMÈLˆ‹Ï‚ˆÜÝ™Ï‚ˆÙ]‚ˆ]‚ˆÛ\ÜÓ˜[YOH^^È›Û\Ù[ZX›Û^Y›Ü™\Ý”›Ý™[ˆ[HÛ\ÜÓ˜[YOH™›Û[›Ü›X[‘Y™™XÝ]™[™\ÜÏÙ[OÜ‚ˆÛ\ÜÓ˜[YOH^VÎ\H^\Û]HXY[™Ë]YÚ]LHX^]ËVÌMH‘]™\žH›ÙXÝÜ˜YYÈHYÚ\Ý]X[]HÝ[™\™ËÜ‚ˆÙ]‚ˆÙ]‚ˆÙ]‚‚ˆËÊˆXÛËYœšY[™H›Ø][™ÈØ\™
-‹ßBˆ]ˆÛ\ÜÓ˜[YOH™›Ø][™ËXØ\™XœÛÛ]H\šYÚMÜLLˆX^]ËVÌMŒH‚ˆ]‚ˆ\˜”ÜšYÈÛ\ÜÓ˜[YOHËMMˆ^[Û]™HX‹LHˆÏ‚ˆÛ\ÜÓ˜[YOH^^È›Û\Ù[ZX›Û^Y›Ü™\Ý‘XÛËQœšY[™OÜ‚ˆÛ\ÜÓ˜[YOH^VÎ\H^]\œ˜H][XÈ”XÚØYÚ[™ÏÜ‚ˆÛ\ÜÓ˜[YOH^VÎ\H^\Û]H]LHXY[™Ë]YÚ‘XÛËYœšY[™HX]\šX[È\ÚYÛ™YÈØ\™H›ÜˆH[™]Ü‚ˆÙ]‚ˆÙ]‚‚ˆËÊˆL	H˜]\˜[›Ø][™ÈØ\™
-‹ßBˆ]ˆÛ\ÜÓ˜[YOH˜XœÛÛ]H[YMÜLKÌÈ^XÜ™X[K[YÚMKLÈ›Ý[™Y\ÛHX^]ËVÌMÌHÚYÝË[ÈˆÝ[O^ÞÈ˜XÚÙÜ›Ý[™ˆ	ÈÌÐŒQŒ‰È_O‚ˆ]ˆÛ\ÜÓ˜[YOH™›^][\Ë\Ý\Ø\LˆX‹Lˆ‚ˆ]ˆÛ\ÜÓ˜[YOHËLLLL›Ý[™YY[›^][\ËXÙ[\ˆ\ÝYžKXÙ[\ˆ›^\Úš[šËLˆÝ[O^ÞÈ˜XÚÙÜ›Ý[™ˆ	Ü™Ø˜JMŒ‹KŒÊIÈ_O‚ˆXY‘XÛÈÛ\ÜÓ˜[YOHËMHMH^\ØYÙHˆÏ‚ˆÙ]‚ˆ]‚ˆÛ\ÜÓ˜[YOH^^È›ÛX›ÛŒL	H˜]\˜[Ü‚ˆÛ\ÜÓ˜[YOH^VÌLH^\ØYÙH][XÈŒL	H[ÝOÜ‚ˆÙ]‚ˆÙ]‚ˆÖÉÓ›È\œÚÚ[ZXØ[ÉË	Ô[P˜\ÙYÛÛÙ™\ÜÉË	Ñ]XØ[HÛÝ\˜ÙY	×K›X\
-Oˆ
-ˆ]ˆÙ^O^ÝHÛ\ÜÓ˜[YOH™›^][\ËXÙ[\ˆØ\LKHX‹LH‚ˆÝ™ÈÚYHŽHˆZYÚHŽHˆšY]Ð›ÞHŒˆš[H››Û™HˆÝ›ÚÙOHˆÐÌŽˆÝ›ÚÙUÚYHŒ‹H‚ˆÛ[[™HÚ[ÏHŒŒˆHMÈLˆ‹Ï‚ˆÜÝ™Ï‚ˆÜ[ˆÛ\ÜÓ˜[YOH^VÎ\H^\Ø[™ÎžÝOÜÜ[‚ˆÙ]‚ˆ
-J_BˆÙ]‚ˆÙ]‚ˆÙ]‚ˆÜÙXÝ[Û‚‚ˆËÊˆ8¥ 8¥ Ô‘ÐS’PÈU’QTˆ8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 
-‹ßBˆ]ˆÛ\ÜÓ˜[YOHœ™[]]™HLMˆÝ™\™›ÝËZY[ˆ™ËXÜ™X[H‚ˆÝ™ÈšY]Ð›ÞHŒMˆ™\Ù\™P\ÜXÝ˜][ÏH››Û™HˆÛ\ÜÓ˜[YOH˜XœÛÛ]H›ÝÛKLËY[Y[ˆ[œÏHš‹ËÝÝÝËÌË›Ü™ËÌŒÜÝ™È‚ˆ]H“LÌˆÌNÍŒMÌˆÍÌŒLLÌˆÌLŒLÎMˆMÌˆMˆ‚ˆš[HˆÑŽQŒ‘MÈ‹Ï‚ˆÜÝ™Ï‚ˆÙ]‚‚ˆËÊˆ8¥ 8¥ ÐUQÓÔ–HS‘È8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 8¥ 
-‹ßBˆÙXÝ[ÛˆÛ\ÜÓ˜[YOH˜™ËXÜ™X[K[YÚKLMˆMˆYœLLˆ™[]]™HÝ™\™›ÝËZY[ˆ‚ˆÙYYÙÛ\ÜÓ˜[YOH˜XœÛÛ]HšYÚNÜN^[Û]™HËNLMˆÜXÚ]KLLÚ[\‹Y]™[Ë[›Û™HˆÏ‚ˆ›ÝÙ\‘XÛÈÛ\ÜÓ˜[YOH˜XœÛÛ]HYM›ÝÛKM^]\œ˜HËLMˆLMˆÜXÚ]KNÚ[\‹Y]™[Ë[›Û™HˆÝ[O^ÞÈÜXÚ]NˆŒ_HÏ‚ˆ]ˆÛ\ÜÓ˜[YOH›X^]ËMÞ^X]]ÈÜšYÜšYXÛÛËLHY™ÜšYXÛÛËLÈØ\M‚ˆÖÂˆÈØ]ˆ	ÚZ\‹\ÛØ\	ËXØÙ[ˆ	ÈÎQMLŽ	Ë™Îˆ	ÈÑQQMÉËX™[ˆ	ÒZ\ˆÛØ\ÉË\ØÎˆ	Ð^]\™YXÈ\˜œÈ›ÜˆÝ›Û™ËX[HZ\‰ËÛÝ[ˆÈKˆÈØ]ˆ	ÜÚÚ[‹\ÛØ\	ËXØÙ[ˆ	ÈÎÍŒŒÎIË™Îˆ	ÈÑQPQLÂÆ&VÃ¢u6¶–â6ö2rÂFW63¢tæGW&UÂw2Ö÷7BVffV7F—fR6ÆVç6W'2rÂ6÷VçC¢2ÒÀ¢²6C¢vf6RÖ7&VÒrÂ66VçC¢r3tC3rÂ&s¢r4cDS„SrÂÆ&VÃ¢tf6R7&V×2rÂFW63¢uF&vWFVB6&Rf÷"&F–çBÂvÆ÷v–ær6¶–ârÂ6÷VçC¢"ÒÀ¢ÒæÖ‚‡²6BÂ66VçBÂ&rÂÆ&VÂÂFW62Â6÷VçBÒ’Óâ€¢ÄÆ–æ²¶W“×¶6GÒ‡&Vc×¶÷6†÷ö6CÒG¶6GÖÐ¢6Æ74æÖSÒ&w&÷W&VÆF—fR÷fW&fÆ÷rÖ†–FFVâÓ‚fÆW‚fÆW‚Ö6öÂ§W7F–g’Ö&WGvVVâÖ–âÖ‚Õ³#…Ò&÷VæFVB×6ÒG&ç6—F–öâÖÆÂGW&F–öâÓ3†÷fW#§6†F÷rÖÖBFW‡GW&R ¢7G–ÆS×·²&6¶w&÷VæD6öÆ÷#¢&rÂ&÷&FW%F÷¢G‚6öÆ–BG¶66VçGÖ×Óà¢ÆF—cà¢Ç6Æ74æÖSÒ'FW‡BÕ³—…ÒG&6¶–ær×v–FW7BWW&66RföçB×6VÖ–&öÆBÖ"Ó""7G–ÆS×·²6öÆ÷#¢66VçB×Óç¶6÷VçGÒ&öGV7G3Â÷à¢Æƒ"6Æ74æÖSÒ&föçBÖF—7Æ’föçBÖ&öÆBFW‡BÖf÷&W7BFW‡BÓ'†ÂÖ"Ó"#ç¶Æ&VÇÓÂöƒ#à¢Ç6Æ74æÖSÒ'FW‡B×6ÆFRFW‡B×6ÒÆVF–ær×&VÆ†VB#ç¶FW67ÓÂ÷à¢ÂöF—cà¢Ç6Æ74æÖSÒ'FW‡BÕ³…ÒG&6¶–ær×v–FW7BWW&66RföçB×6VÖ–&öÆB×BÓBw&÷WÖ†÷fW#§G&ç6ÆFR×‚ÓG&ç6—F–öâ×G&ç6f÷&ÒGW&F–öâÓ#"7G–ÆS×·²6öÆ÷#¢66VçB×Óà¢W‡Æ÷&R(i ¢Â÷à¢²ò¢FV6÷&F—fRÆVb¢÷Ð¢ÄÆVdFV6ò6Æ74æÖSÒ&'6öÇWFR&–v‡BÓB&÷GFöÒÓBrÓb‚Ó#B÷6—G’Ó"7G–ÆS×·²6öÆ÷#¢66VçB×Òóà¢ÂôÆ–æ³à¢’—Ð¢ÂöF—cà¢Â÷6V7F–öãà ¢²ò¢)H)HdTEU$TB$ôET5E2)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H¢÷Ð¢Ç6V7F–öâ6Æ74æÖSÒ'6V7F–öâ&rÖ7&VÒ&VÆF—fR÷fW&fÆ÷rÖ†–FFVâ#à¢Ä†W&%7&–r6Æ74æÖSÒ&'6öÇWFRÆVgBÓbF÷ÓbFW‡B×FW'&rÓb‚Ó#÷6—G’Ó‚ö–çFW"ÖWfVçG2ÖæöæR"7G–ÆS×·²÷6—G“¢ã‚×Òóà¢Å6VVEöB6Æ74æÖSÒ&'6öÇWFR&–v‡BÓ"&÷GFöÒÓbFW‡BÖöÆ—fRrÓr‚ÓB÷6—G’Óö–çFW"ÖWfVçG2ÖæöæR"óà¢ÆF—b6Æ74æÖSÒ&Ö‚×rÓw†Â×‚ÖWFò#à¢ÆF—b6Æ74æÖSÒ&fÆW‚—FV×2ÖVæB§W7F–g’Ö&WGvVVâÖ"Ó"#à¢ÆF—cà¢Ç6Æ74æÖSÒ'FW‡BÕ³…ÒG&6¶–ær×v–FW7BWW&66RFW‡B×6ÆFRÖ"Ó"föçB×6VÖ–&öÆB#ä&W7G6VÆÆW'3Â÷à¢Æƒ"6Æ74æÖSÒ&föçBÖF—7Æ’föçBÖ&öÆBFW‡BÖf÷&W7BFW‡BÓG†ÂÖC§FW‡BÓW†Â#ä÷W"ff÷W&—FW3Âöƒ#à¢ÂöF—cà¢ÄÆ–æ²‡&VcÒ"÷6†÷"6Æ74æÖSÒ&†–FFVâÖC¦&Æö6²FW‡BÕ³…ÒG&6¶–ær×v–FW7BWW&66RföçB×6VÖ–&öÆBFW‡BÖf÷&W7B†÷fW#§FW‡BÖöÆ—fRG&ç6—F–öâÖ6öÆ÷'2GW&F–öâÓ#&÷&FW"Ö"&÷&FW"Öf÷&W7B"ÓãR#à¢f–WrÆÂ(i ¢ÂôÆ–æ³à¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ&w&–Bw&–BÖ6öÇ2Ó6Ó¦w&–BÖ6öÇ2Ó"Æs¦w&–BÖ6öÇ2ÓBvÓB#à¢¶fVGW&VBæÖ‡&öGV7BÓâ€¢Å&öGV7D6&B¶W“×·&öGV7Bæ–GÒ&öGV7C×·&öGV7GÒóà¢’—Ð¢ÂöF—cà¢ÂöF—cà¢Â÷6V7F–öãà ¢²ò¢)H)Ht…’„äDÔDR)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H¢÷Ð¢Ç6V7F–öâ6Æ74æÖSÒ'6V7F–öâ&rÖ7&VÒÖÆ–v‡B&VÆF—fR÷fW&fÆ÷rÖ†–FFVâFW‡GW&R#à¢Ä'&æ6„FV6ò6Æ74æÖSÒ&'6öÇWFR&–v‡BÓF÷ÓFW‡BÖöÆ—fRrÓcB‚ÓcB÷6—G’ÓRö–çFW"ÖWfVçG2ÖæöæR"óà¢ÄfÆ÷vW$FV6ò6Æ74æÖSÒ&'6öÇWFRÆVgBÓ&÷GFöÒÓ‚FW‡B×FW'&rÓ#B‚Ó#B÷6—G’ÓRö–çFW"ÖWfVçG2ÖæöæR"óà¢ÆF—b6Æ74æÖSÒ&Ö‚×rÓw†Â×‚ÖWFò&VÆF—fR#à¢ÆF—b6Æ74æÖSÒ'FW‡BÖ6VçFW"Ö"ÓB#à¢Ç6Æ74æÖSÒ'FW‡BÕ³…ÒG&6¶–ær×v–FW7BWW&66RFW‡B×6ÆFRÖ"Ó2föçB×6VÖ–&öÆB#åv‡’—BÖGFW'3Â÷à¢Æƒ"6Æ74æÖSÒ&föçBÖF—7Æ’föçBÖ&öÆBFW‡BÖf÷&W7BFW‡BÓG†Â#åF†R†æFÖFRF–ffW&Væ6SÂöƒ#à¢ÂöF—cà¢ÆF—b6Æ74æÖSÒ&w&–Bw&–BÖ6öÇ2ÓÖC¦w&–BÖ6öÇ2Ó2vÓ#à¢µ°¢²66VçC¢r3”SD#‚rÂF—FÆS¢u6ÖÆÂ&F6‚–çFVw&—G’rÂ–6öã¢Å6VVEöB6Æ74æÖSÒ'rÓ‚‚Ó"FW‡B×FW'&÷6—G’Óc"óâÂ&öG“¢uvRÖ¶R–â&F6†W2öbVæFW"SVæ—G2âæò6†÷'F7WG2Âæò'VÆ²ÖçVf7GW&–ærâ–÷RvWB&öGV7BÖFRv—F‚gVÆÂGFVçF–öâârÒÀ¢²66VçC¢r3„3c#3’rÂF—FÆS¢t–æw&VF–VçG2–÷R6â&VBrÂ–6öã¢ÄÆVdFV6ò6Æ74æÖSÒ'rÓ‚‚Ó"FW‡BÖöÆ—fR÷6—G’Óc"óâÂ&öG“¢tæòf–ÆÆW'2Âæò7–çF†WF–2g&w&æ6RÂæò×—7FW'’6†VÖ–6Ç2âWfW'’–æw&VF–VçBV&ç2—G2Æ6RæB—2Æ—7FVB6ÆV&Ç’ârÒÀ¢²66VçC¢r3tC3rÂF—FÆS¢u6¶–âF†B&W7öæG2rÂ–6öã¢Ä†W&%7&–r6Æ74æÖSÒ'rÓb‚Ó"FW‡B×FVÂ÷6—G’Óc"óâÂ&öG“¢uv—F†÷WB7G&—–ær7VÇ†FW2æB'F–f–6–ÂFF—F—fW2Â–÷W"6¶–â†276RFò'&VF†RÂ&Ææ6RÂæBvVçV–æVÇ’†VÂârÒÀ¢ÒæÖ‚‡²66VçBÂF—FÆRÂ–6öâÂ&öG’Ò’Óâ€¢ÆF—b¶W“×·F—FÆWÒ6Æ74æÖSÒ&fÆW‚fÆW‚Ö6öÂvÓB#à¢ÆF—b6Æ74æÖSÒ&Ö"Ó"#ç¶–6öçÓÂöF—cà¢ÆF—b6Æ74æÖSÒ'rÓ‚Ó&÷VæFVBÖgVÆÂ"7G–ÆS×·²&6¶w&÷VæD6öÆ÷#¢66VçB×Òóà¢Æƒ26Æ74æÖSÒ&föçBÖF—7Æ’föçBÖ&öÆBFW‡BÖf÷&W7BFW‡B×†Â#ç·F—FÆWÓÂöƒ3à¢Ç6Æ74æÖSÒ'FW‡BÖ–æ²ÖÆ–v‡BFW‡B×6ÒÆVF–ær×&VÆ†VB#ç¶&öG—ÓÂ÷à¢ÂöF—cà¢’—Ð¢ÂöF—cà¢ÂöF—cà¢Â÷6V7F–öãà ¢²ò¢)H)Hõ$tä”2tdRD•d”DU")H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H¢÷Ð¢ÆF—b6Æ74æÖSÒ'&VÆF—fR‚Ó"÷fW&fÆ÷rÖ†–FFVâ&rÖ7&VÒÖÆ–v‡B#à¢Ç7frf–Wt&÷ƒÒ#CCC‚"&W6W'fT7V7E&F–óÒ&æöæR"6Æ74æÖSÒ&'6öÇWFR&÷GFöÒÓrÖgVÆÂ‚ÖgVÆÂ"†ÖÆç3Ò&‡GG¢ò÷wwrçs2æ÷&ró#÷7fr#à¢ÇF‚CÒ$ÓÃ#B3#CÃC‚CƒÃs#Ã#B3“cÃC‚#ÃCCÃ#BÃCCÃC‚ÃÃC‚¢ ¢f–ÆÃÒ"4TdSTCR"óà¢Â÷7fsà¢ÂöF—cà ¢²ò¢)H)H$Ud”UrDU5D”Ôôä”Â)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H)H¢÷Ð¢Ç6V7F–öâ6Æ74æÖSÒ'6V7F–öâ&rÖ7&VÒFW‡BÖ6VçFW"&VÆF—fR÷fW&fÆ÷rÖ†–FFVâ#à¢Ä6—&6ÆTFV6ò6Æ74æÖSÒ&'6öÇWFRÆVgBÓó"F÷Óó"×G&ç6ÆFR×‚Óó"×G&ç6ÆFR×’Óó"rÓs"‚Ós"FW‡B×FW'&÷6—G’ÓRö–çFW"ÖWfVçG2ÖæöæR"óà¢ÄfÆ÷vW$FV6ò6Æ74æÖSÒ&'6öÇWFR&–v‡BÓbF÷ÓbFW‡B×6vRrÓb‚Ób÷6—G’ÓRö–çFW"ÖWfVçG2ÖæöæR"óà¢Ä†W&%7&–r6Æ74æÖSÒ&'6öÇWFRÆVgBÓ"&÷GFöÒÓ"FW‡BÖöÆ—fRrÓ‚‚Ó#÷6—G’Ó‚ö–çFW"ÖWfVçG2ÖæöæR"7G–ÆS×·²÷6—G“¢ã‚×Òóà¢ÆF—b6Æ74æÖSÒ&Ö‚×rÓ'†Â×‚ÖWFò&VÆF—fR#à¢²ò¢&öGV7B–6öç2¢÷Ð¢ÆF—b6Æ74æÖSÒ&fÆW‚§W7F–g’Ö6VçFW"vÓ"Ö"Ó‚#à¢µ²r4cDDCrÂr4CD#ƒ“buÒæÖ‚†&rÂ’’ÓâŒdiv key={i} className={`w-12 h-14 rounded-sm shadow-md flex items-end justify-center pb-1 ${i === 1 ? 'mb-3' : ''}`} style={{ backgroundColor: bg }}>
+            {/* Reviews social proof */}
+            <div className="flex items-center gap-3 mt-10 pt-8 border-t border-sand">
+              <div className="flex -space-x-2">
+                {['#F0DDD0', '#D4B896', '#C08B68', '#9E4A28'].map((bg, i) => (
+                  <div key={i} className="w-8 h-8 rounded-full border-2 border-cream-light" style={{ backgroundColor: bg }} />
+                ))}
+              </div>
+              <div>
+                <div className="stars text-xs">â˜…â˜…â˜…â˜…â˜…</div>
+                <p className="text-xs text-slate mt-0.5">4.9 Â· 200+ happy customers</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Hero image + floating cards */}
+          <div className="relative fade-up" style={{ animationDelay: '0.15s' }}>
+            {/* Main image */}
+            <div className="relative aspect-[4/5] overflow-hidden rounded-sm" style={{ backgroundColor: '#D4B896' }}>
+              <Image
+                src="/images/hero.jpg"
+                alt="Earth & Essence Co. natural skincare"
+                fill
+                className="object-cover"
+                priority
+              />
+              {/* Fallback placeholder */}
+              <div className="absolute inset-0 flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #D4B896 0%, #EFE5D5 60%, #C08B68 100%)' }}>
+                <div className="text-center">
+                  <FlowerDeco className="w-24 h-24 mx-auto text-forest opacity-20" />
+                  <p className="font-display font-bold text-4xl text-forest/20 mt-2">E&amp;E</p>
+                  <p className="text-[9px] tracking-widest uppercase text-forest/20 mt-1">Add /public/images/hero.jpg</p>
+                </div>
+              </div>
+              {/* Accent bar */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-terra" />
+
+              {/* Proven effectiveness card */}
+              <div className="floating-card absolute bottom-6 left-4">
+                <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: '#F0DDD0' }}>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#9E4A28" strokeWidth="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-forest">Proven <em className="font-normal">Effectiveness</em></p>
+                  <p className="text-[9px] text-slate leading-tight mt-0.5 max-w-[140px]">Every product crafted to the highest quality standards.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Eco-friendly floating card */}
+            <div className="floating-card absolute -right-4 top-12 max-w-[160px]">
+              <div>
+                <HerbSprig className="w-4 h-6 text-olive mb-1" />
+                <p className="text-xs font-semibold text-forest">Eco-Friendly</p>
+                <p className="text-[9px] text-terra italic">Packaging</p>
+                <p className="text-[9px] text-slate mt-1 leading-tight">Eco-friendly materials designed to care for the planet.</p>
+              </div>
+            </div>
+
+            {/* 100% Natural floating card */}
+            <div className="absolute -left-4 top-1/3 text-cream-light px-4 py-3 rounded-sm max-w-[170px] shadow-lg" style={{ background: '#3B1F0F' }}>
+              <div className="flex items-start gap-2 mb-2">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: 'rgba(160,82,45,0.3)' }}>
+                  <LeafDeco className="w-5 h-5 text-sage" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold">100% Natural</p>
+                  <p className="text-[10px] text-sage italic">100% You</p>
+                </div>
+              </div>
+              {['No Harsh Chemicals', 'Plant-Based Goodness', 'Ethically Sourced'].map(t => (
+                <div key={t} className="flex items-center gap-1.5 mb-1">
+                  <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="#C08B68" strokeWidth="2.5">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  <span className="text-[9px] text-sand/80">{t}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* â”€â”€ ORGANIC DIVIDER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <div className="relative h-16 overflow-hidden bg-cream">
+        <svg viewBox="0 0 1440 64" preserveAspectRatio="none" className="absolute bottom-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,32 C180,64 360,0 540,32 C720,64 900,0 1080,32 C1260,64 1380,16 1440,32 L1440,64 L0,64 Z"
+            fill="#F9F2E7"/>
+        </svg>
+      </div>
+
+      {/* â”€â”€ CATEGORY BANDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <section className="bg-cream-light py-16 px-6 md:px-12 relative overflow-hidden">
+        <SeedPod className="absolute right-8 top-8 text-olive w-8 h-16 opacity-10 pointer-events-none" />
+        <FlowerDeco className="absolute left-4 bottom-4 text-terra w-16 h-16 opacity-8 pointer-events-none" style={{ opacity: 0.08 }} />
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            { cat: 'hair-soap',  accent: '#9E4A28', bg: '#F5EDE7', label: 'Hair Soaps',  desc: 'Ayurvedic herbs for strong, healthy hair',     count: 3 },
+            { cat: 'skin-soap',  accent: '#8C6239', bg: '#F5EAE0', label: 'Skin Soaps',  desc: 'Nature\'s most effective cleansers',            count: 3 },
+            { cat: 'face-cream', accent: '#7A4030', bg: '#F4E8E0', label: 'Face Creams', desc: 'Targeted care for radiant, glowing skin',       count: 2 },
+          ].map(({ cat, accent, bg, label, desc, count }) => (
+            <Link key={cat} href={`/shop?cat=${cat}`}
+              className="group relative overflow-hidden p-8 flex flex-col justify-between min-h-[200px] rounded-sm transition-all duration-300 hover:shadow-md texture"
+              style={{ backgroundColor: bg, borderTop: `4px solid ${accent}` }}>
+              <div>
+                <p className="text-[9px] tracking-widest uppercase font-semibold mb-2" style={{ color: accent }}>{count} products</p>
+                <h2 className="font-display font-bold text-forest text-2xl mb-2">{label}</h2>
+                <p className="text-slate text-sm leading-relaxed">{desc}</p>
+              </div>
+              <p className="text-[10px] tracking-widest uppercase font-semibold mt-4 group-hover:translate-x-1 transition-transform duration-200" style={{ color: accent }}>
+                Explore â†’
+              </p>
+              {/* Decorative leaf */}
+              <LeafDeco className="absolute right-4 bottom-4 w-16 h-24 opacity-10" style={{ color: accent }} />
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* â”€â”€ FEATURED PRODUCTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <section className="section bg-cream relative overflow-hidden">
+        <HerbSprig className="absolute left-6 top-16 text-terra w-6 h-20 opacity-8 pointer-events-none" style={{ opacity: 0.08 }} />
+        <SeedPod className="absolute right-12 bottom-16 text-olive w-7 h-14 opacity-10 pointer-events-none" />
+        <div className="max-w-7xl mx-auto">
+          <div className="flex items-end justify-between mb-12">
+            <div>
+              <p className="text-[10px] tracking-widest uppercase text-slate mb-2 font-semibold">Bestsellers</p>
+              <h2 className="font-display font-bold text-forest text-4xl md:text-5xl">Our Favourites</h2>
+            </div>
+            <Link href="/shop" className="hidden md:block text-[10px] tracking-widest uppercase font-semibold text-forest hover:text-olive transition-colors duration-200 border-b border-forest pb-0.5">
+              View All â†’
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {featured.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* â”€â”€ WHY HANDMADE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <section className="section bg-cream-light relative overflow-hidden texture">
+        <BranchDeco className="absolute right-0 top-0 text-olive w-64 h-64 opacity-5 pointer-events-none" />
+        <FlowerDeco className="absolute left-0 bottom-8 text-terra w-24 h-24 opacity-5 pointer-events-none" />
+        <div className="max-w-7xl mx-auto relative">
+          <div className="text-center mb-14">
+            <p className="text-[10px] tracking-widest uppercase text-slate mb-3 font-semibold">Why it matters</p>
+            <h2 className="font-display font-bold text-forest text-4xl">The Handmade Difference</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {[
+              { accent: '#9E4A28', title: 'Small Batch Integrity',      icon: <SeedPod className="w-8 h-12 text-terra opacity-60" />, body: 'We make in batches of under 50 units. No shortcuts, no bulk manufacturing. You get a product made with full attention.' },
+              { accent: '#8C6239', title: 'Ingredients You Can Read',   icon: <LeafDeco className="w-8 h-12 text-olive opacity-60" />, body: 'No fillers, no synthetic fragrance, no mystery chemicals. Every ingredient earns its place and is listed clearly.' },
+              { accent: '#7A4030', title: 'Skin That Responds',         icon: <HerbSprig className="w-6 h-12 text-teal opacity-60" />, body: 'Without stripping sulphates and artificial additives, your skin has space to breathe, balance, and genuinely heal.' },
+            ].map(({ accent, title, icon, body }) => (
+              <div key={title} className="flex flex-col gap-4">
+                <div className="mb-2">{icon}</div>
+                <div className="w-10 h-1 rounded-full" style={{ backgroundColor: accent }} />
+                <h3 className="font-display font-bold text-forest text-xl">{title}</h3>
+                <p className="text-ink-light text-sm leading-relaxed">{body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* â”€â”€ ORGANIC WAVE DIVIDER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <div className="relative h-12 overflow-hidden bg-cream-light">
+        <svg viewBox="0 0 1440 48" preserveAspectRatio="none" className="absolute bottom-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,24 C240,48 480,0 720,24 C960,48 1200,0 1440,24 L1440,48 L0,48 Z"
+            fill="#EFE5D5"/>
+        </svg>
+      </div>
+
+      {/* â”€â”€ REVIEW TESTIMONIAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */}
+      <section className="section bg-cream text-center relative overflow-hidden">
+        <CircleDeco className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-72 h-72 text-terra opacity-5 pointer-events-none" />
+        <FlowerDeco className="absolute right-16 top-16 text-sage w-16 h-16 opacity-5 pointer-events-none" />
+        <HerbSprig className="absolute left-12 bottom-12 text-olive w-8 h-20 opacity-8 pointer-events-none" style={{ opacity: 0.08 }} />
+        <div className="max-w-2xl mx-auto relative">
+          {/* Product icons */}
+          <div className="flex justify-center gap-2 mb-8">
+            {['#F0DDD0', '#D4B896'].map((bg, i) => (
+              <div key={i} className={`w-12 h-14 rounded-sm shadow-md flex items-end justify-center pb-1 ${i === 1 ? 'mb-3' : ''}`} style={{ backgroundColor: bg }}>
                 <div className="w-1 h-8 rounded-full" style={{ background: '#9E4A28', opacity: 0.3 }} />
               </div>
             ))}
